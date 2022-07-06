@@ -2,9 +2,9 @@
 Udemy course where I learned some fun Python skills 
 
 ## What I learned:
-Python syntax\n
-Python Dictionaries\n
-Using smtp's for sending automated emails\n
-Using requests module to interact with API's\n
-Object Orienting Design With Python\n
+Python syntax <br/>
+Python Dictionaries <br/>
+Using smtp's for sending automated emails <br/>
+Using requests module to interact with API's <br/>
+Object Orienting Design With Python <br/>
 
