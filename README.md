@@ -1,5 +1,6 @@
 # Python-100-Days-of-Code-Bootcamp
-Udemy course where I learned some fun Python skills 
+In this repo are some of my projects from the 100-Days-of-Code-Bootcamp from Udemy <br/>
+Here is the link: https://www.udemy.com/course/100-days-of-code/
 
 ## What I learned:
 -Python syntax <br/>
