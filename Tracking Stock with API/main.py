@@ -8,8 +8,8 @@ COMPANY_NAME = "Tesla Inc"
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-stock_api_key = "UMO4OM1AA155ZVQS"
-news_api = "4bb3bfc02766404094c43abff66cf190"
+stock_api_key = "Input API KEY" #Removed for safety
+news_api = "Input API KEY" 
 
 stock_parameters = {
     "function":"TIME_SERIES_DAILY",
@@ -105,7 +105,7 @@ def send_articles(text_content):
         message = client.messages \
             .create(
             body=f"Headline: {element[0]}\nBrief: {element[1]}",
-            from_="+19379155904",
+            from_="input twilioNumber", #Removed for privacy
             to="+261329375832",
         )
         print(message)
@@ -113,13 +113,4 @@ def send_articles(text_content):
 send_articles(text_array)
 
 #Optional TODO: Format the message like this: 
-"""
-TSLA: 🔺2%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-or
-"TSLA: 🔻5%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-"""
 
